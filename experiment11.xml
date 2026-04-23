@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="library.css"?>
+<library>
+    <book>
+        <id>001</id>
+        <title>Introduction to XML</title>
+        <author>John XMLson</author>
+        <published_year>2018</published_year>
+        <available_copies>5</available_copies>
+    </book>
+    <book>
+        <id>002</id>
+        <title>Mastering XSLT</title>
+        <author>Jane Transform</author>
+        <published_year>2020</published_year>
+        <available_copies>3</available_copies>
+    </book>
+</library>

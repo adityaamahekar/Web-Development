@@ -1,0 +1,25 @@
+/* Style for the library XML */
+library {
+    display: block;
+    font-family: "Georgia", serif;
+    background-color: #fff3e0;
+    padding: 15px;
+}
+
+/* Style each book */
+book {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #ff9800;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+/* Style elements inside book */
+id, title, author, published_year, available_copies {
+    display: block;
+    font-weight: bold;
+    color: #e65100;
+    margin: 5px 0;
+}
