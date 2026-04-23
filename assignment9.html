@@ -1,0 +1,115 @@
+<!--form for student-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px;
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #34495e;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        input[type="tel"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Student Registration Form</h2>
+
+    <form method="post">
+        <label>Full Name:</label>
+        <input type="text" placeholder="Full name" name="fullname"><br><br>
+
+        <label>Email:</label>
+        <input type="email" placeholder="E-mail"  name="email"><br><br>
+
+        <label>Password:</label>
+        <input type="password" placeholder="Password" name="password"><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female</input>
+        <br><br>
+
+        <label>Date of Birth:</label>
+        <input type="date" name="dob"><br><br>
+
+        <label>Mobile Number:</label>
+        <input type="tel" palceholder="Moblie Number"  name="mobile"><br><br>
+
+        <label>Course:</label>
+        <select name="course">
+            <option>BCA</option>
+            <option>BSc</option>
+            <option>BTech</option>
+            <option>BCom</option>
+            <option>BBA</option>
+        </select>
+        <br><br>
+
+        <label>Address:</label><br>
+        <textarea name="address" placeholder="Address" rows="4" cols="30"></textarea><br><br>
+
+        <label>Hobbies:</label>
+        <input type="checkbox" name="hobby" value="Reading"> Reading
+        <input type="checkbox" name="hobby" value="Sports"> Sports
+        <input type="checkbox" name="hobby" value="Music"> Music
+        <br><br>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Reset">
+    </form>
+
+</body>
+</html>
