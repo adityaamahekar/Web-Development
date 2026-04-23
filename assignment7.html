@@ -1,133 +1,221 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>College Time Table</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Time Table</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f4f8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+    }
 
-<style>
-body{
-font-family: Arial, sans-serif;
-background-color:#f5f5f5;
-}
+    h1 {
+      color: #2c3e50;
+      margin-bottom: 5px;
+      font-size: 24px;
+    }
 
-h2{
-color:#2c3e50;
-}
+    .subtitle {
+      color: #7f8c8d;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
 
-table{
-border-collapse: collapse;
-background-color:white;
-}
+    .table-wrapper {
+      overflow-x: auto;
+      width: 100%;
+      max-width: 900px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      overflow: hidden;
+    }
 
-th{
-background-color:#3498db;
-color:white;
-}
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #ffffff;
+    }
 
-td, th{
-border:1px solid black;
-padding:10px;
-text-align:center;
-}
+    caption {
+      font-size: 20px;
+      font-weight: bold;
+      padding: 15px;
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      letter-spacing: 1px;
+    }
 
-h2{
-text-align:center;
-}
+    thead th {
+      background-color: #3498db;
+      color: white;
+      padding: 12px 16px;
+      text-align: center;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+    }
 
-table{
-margin:0 auto;
-width:80%;
-border:2px solid black;
-border-collapse:collapse;
-}
+    tbody td {
+      padding: 12px 16px;
+      text-align: center;
+      border: 1px solid #e0e0e0;
+      font-size: 14px;
+      transition: background-color 0.2s;
+    }
 
-tr:hover{
-background-color:#ecf0f1;
-}
+    tbody tr:hover td {
+      background-color: #eaf4fb;
+    }
 
-caption{
-font-size:20px;
-margin:10px;
-}
-</style>
+    /* Day column styling */
+    tbody td:first-child {
+      background-color: #2c3e50;
+      color: white;
+      font-weight: bold;
+      font-size: 13px;
+      white-space: nowrap;
+    }
 
+    tbody tr:hover td:first-child {
+      background-color: #34495e;
+    }
+
+    /* Subject color coding */
+    td.dsa   { background-color: #fde8e8; color: #c0392b; font-weight: 600; }
+    td.at    { background-color: #e8f8e8; color: #27ae60; font-weight: 600; }
+    td.web   { background-color: #e8f0fe; color: #2980b9; font-weight: 600; }
+    td.aooc  { background-color: #fef9e7; color: #d68910; font-weight: 600; }
+
+    /* Lunch Break */
+    td.lunch {
+      background-color: #f0f0f0;
+      color: #7f8c8d;
+      font-weight: bold;
+      font-style: italic;
+      font-size: 13px;
+      vertical-align: middle;
+    }
+
+    /* Legend */
+    .legend {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      max-width: 900px;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #2c3e50;
+    }
+
+    .legend-box {
+      width: 16px;
+      height: 16px;
+      border-radius: 4px;
+    }
+
+    .legend-box.dsa  { background-color: #fde8e8; border: 1px solid #c0392b; }
+    .legend-box.at   { background-color: #e8f8e8; border: 1px solid #27ae60; }
+    .legend-box.web  { background-color: #e8f0fe; border: 1px solid #2980b9; }
+    .legend-box.aooc { background-color: #fef9e7; border: 1px solid #d68910; }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      tbody td, thead th {
+        padding: 8px 10px;
+        font-size: 12px;
+      }
+
+      h1 { font-size: 18px; }
+    }
+  </style>
 </head>
-
 <body>
 
-<h2><i>SY CSE - Weekly Time Table</i></h2>
+  <h1>SY CSE - Weekly Time Table</h1>
+  <p class="subtitle">Academic Year 2024-25 | Second Year Computer Science & Engineering</p>
 
-<p><b>Subjects in this Semester:</b></p>
+  <div class="table-wrapper">
+    <table summary="Weekly timetable for SY CSE students showing subjects scheduled from Monday to Friday">
+      <caption>📅 Weekly Schedule</caption>
 
-<ul>
-<li><b>DSA</b> – Data Structures and Algorithms</li>
-<li><i>AT</i> – Automata Theory</li>
-<li>WEB – Web Development</li>
-<li><b><i>AOOC</i></b> – Advanced Object Oriented Concepts</li>
-</ul>
+      <thead>
+        <tr>
+          <th scope="col">Day / Time</th>
+          <th scope="col">9:00 - 10:00</th>
+          <th scope="col">10:00 - 11:00</th>
+          <th scope="col">11:00 - 12:00</th>
+          <th scope="col">12:00 - 1:00</th>
+          <th scope="col">2:00 - 3:00</th>
+          <th scope="col">3:00 - 4:00</th>
+        </tr>
+      </thead>
 
-<table>
+      <tbody>
+        <tr>
+          <td scope="row">Monday</td>
+          <td class="dsa">DSA</td>
+          <td class="at">AT</td>
+          <td class="web">WEB</td>
+          <td class="lunch" rowspan="5">🍽️ Lunch Break</td>
+          <td class="aooc">AOOC</td>
+          <td class="dsa">DSA</td>
+        </tr>
+        <tr>
+          <td scope="row">Tuesday</td>
+          <td class="web">WEB</td>
+          <td class="dsa">DSA</td>
+          <td class="at">AT</td>
+          <td class="aooc">AOOC</td>
+          <td class="web">WEB</td>
+        </tr>
+        <tr>
+          <td scope="row">Wednesday</td>
+          <td class="aooc">AOOC</td>
+          <td class="web">WEB</td>
+          <td class="dsa">DSA</td>
+          <td class="at">AT</td>
+          <td class="aooc">AOOC</td>
+        </tr>
+        <tr>
+          <td scope="row">Thursday</td>
+          <td class="at">AT</td>
+          <td class="dsa">DSA</td>
+          <td class="web">WEB</td>
+          <td class="aooc">AOOC</td>
+          <td class="dsa">DSA</td>
+        </tr>
+        <tr>
+          <td scope="row">Friday</td>
+          <td class="web">WEB</td>
+          <td class="aooc">AOOC</td>
+          <td class="at">AT</td>
+          <td class="dsa">DSA</td>
+          <td class="web">WEB</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
-<caption><b><u>College Time Table</u></b></caption>
-
-<tr>
-<th>Day/Time</th>
-<th>9-10</th>
-<th>10-11</th>
-<th>11-12</th>
-<th>12-1</th>
-<th>1-2</th>
-<th>2-3</th>
-</tr>
-
-<tr>
-<td><b>Monday</b></td>
-<td><b>DSA</b></td>
-<td><i>AT</i></td>
-<td>WEB</td>
-<td rowspan="5"><b>Lunch Break</b></td>
-<td><i>AOOC</i></td>
-<td>DSA</td>
-</tr>
-
-<tr>
-<td><b>Tuesday</b></td>
-<td>WEB</td>
-<td><b>DSA</b></td>
-<td>AT</td>
-<td>AOOC</td>
-<td>WEB</td>
-</tr>
-
-<tr>
-<td><b>Wednesday</b></td>
-<td>AOOC</td>
-<td>WEB</td>
-<td><b>DSA</b></td>
-<td>AT</td>
-<td>AOOC</td>
-</tr>
-
-<tr>
-<td><b>Thursday</b></td>
-<td>AT</td>
-<td>DSA</td>
-<td>WEB</td>
-<td>AOOC</td>
-<td>DSA</td>
-</tr>
-
-<tr>
-<td><b>Friday</b></td>
-<td>WEB</td>
-<td>AOOC</td>
-<td>AT</td>
-<td>DSA</td>
-<td>WEB</td>
-</tr>
-
-</table>
-
-<p><small><i>Note: Practical sessions may be scheduled in the laboratory.</i></small></p>
+  <!-- Legend -->
+  <div class="legend">
+    <div class="legend-item"><div class="legend-box dsa"></div> DSA — Data Structures & Algorithms</div>
+    <div class="legend-item"><div class="legend-box at"></div> AT — Automata Theory</div>
+    <div class="legend-item"><div class="legend-box web"></div> WEB — Web Technology</div>
+    <div class="legend-item"><div class="legend-box aooc"></div> AOOC — Advanced OOP Concepts</div>
+  </div>
 
 </body>
 </html>
