@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="experiment12.xsl"?>
+<bookstore>
+    <book category="Programming">
+        <title>Web Development with HTML5</title>
+        <author>John Resig</author>
+        <year>2023</year>
+        <price>45.99</price>
+    </book>
+    <book category="Database">
+        <title>SQL Mastery</title>
+        <author>Alice Williams</author>
+        <year>2022</year>
+        <price>39.50</price>
+    </book>
+    <book category="Design">
+        <title>Modern UI/UX Principles</title>
+        <author>Sarah Jenkins</author>
+        <year>2024</year>
+        <price>55.00</price>
+    </book>
+    <book category="Programming">
+        <title>Advanced JavaScript Guide</title>
+        <author>David Flanagan</author>
+        <year>2021</year>
+        <price>42.00</price>
+    </book>
+</bookstore>
