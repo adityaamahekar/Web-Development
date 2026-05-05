@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="experiment13.xsl"?>
+<student_app>
+    <student>
+        <id>201</id>
+        <name>Aarav Kulkarni</name>
+        <department>Computer Science</department>
+        <marks>92</marks>
+        <status>Active</status>
+    </student>
+    <student>
+        <id>202</id>
+        <name>Isha Deshmukh</name>
+        <department>Information Technology</department>
+        <marks>78</marks>
+        <status>Active</status>
+    </student>
+    <student>
+        <id>203</id>
+        <name>Rahul Patwardhan</name>
+        <department>Computer Science</department>
+        <marks>85</marks>
+        <status>Inactive</status>
+    </student>
+    <student>
+        <id>204</id>
+        <name>Pooja Jadhav</name>
+        <department>Mechanical</department>
+        <marks>65</marks>
+        <status>Active</status>
+    </student>
+</student_app>
