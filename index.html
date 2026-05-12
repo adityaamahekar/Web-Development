@@ -1,110 +1,273 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Aditya Y Mahekar - Assignments</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Lab - Experiments</title>
+    <link rel="stylesheet" href="nav-style.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f2f5;
-            margin: 0;
+            background: linear-gradient(160deg, #ecfeff 0%, #cffafe 45%, #e0f2fe 100%);
+            min-height: 100vh;
+            padding: 0;
         }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 15px;
+
+        .hero {
             text-align: center;
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, #0369a1 0%, #0d9488 55%, #0f766e 100%);
+            color: white;
+            margin-bottom: 2rem;
+            box-shadow: 0 12px 40px rgba(3, 105, 161, 0.25);
         }
-        h2 {
-            margin-left: 20px;
-            color: #333;
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
         }
-        .assignment {
-            background: white;
-            margin: 20px;
-            padding: 15px;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
         }
-        iframe {
-            width: 100%;
-            height: 300px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .experiments-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .experiment-card {
+            background: rgba(255, 255, 255, 0.92);
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 8px 32px rgba(15, 118, 110, 0.08);
+            border: 1px solid rgba(14, 165, 233, 0.18);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .experiment-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #0284c7, #14b8a6, #0d9488);
+        }
+
+        .experiment-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 48px rgba(3, 105, 161, 0.14);
+            border-color: rgba(13, 148, 136, 0.35);
+        }
+
+        .experiment-card h3 {
+            margin-top: 0;
+            color: #134e4a;
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .experiment-card .experiment-number {
+            color: #0e7490;
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .experiment-card p {
+            color: #5b6b6a;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .experiment-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .experiment-links .btn {
+            padding: 0.5rem 1rem;
+            font-size: 0.9rem;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+
+        .experiment-links .btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .experiment-links .btn-filename {
+            font-family: ui-monospace, Consolas, monospace;
+            font-size: 0.8rem;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            color: #5c6b7a;
+            border-top: 1px solid rgba(14, 165, 233, 0.2);
+            margin-top: 4rem;
         }
     </style>
 </head>
-
 <body>
+    <div class="hero">
+        <h1>🚀 Web Development Lab</h1>
+        <p>Explore interactive HTML experiments and learn web development fundamentals</p>
+        <p style="margin-top: 1rem; font-size: 1rem; opacity: 0.85;">Created by <strong>Aditya Mahekar</strong> |Rollno.: 12 | College:-D.Y.Patil College</p>
+    </div>
 
-<header>
-    <h1>My Assignments Output</h1>
-    <p><b>Name:</b> Aditya Y Mahekar | <b>Roll No:</b> 12</p>
-</header>
+    <div class="container">
+        <div class="experiments-grid">
+            <div class="experiment-card">
+                <span class="experiment-number">Experiment 1</span>
+                <h3>🌐 My First Web Page</h3>
+                <p>Basic HTML document structure and your first published page.</p>
+                <div class="experiment-links">
+                    <a href="assignmnet1.html" class="btn btn-filename">assignmnet1.html</a>
+                </div>
+            </div>
 
-<div class="assignment">
-    <h2>Assignment 1</h2>
-    <iframe src="assignmnet1.html"></iframe>
-</div>
+            <div class="experiment-card">
+                <span class="experiment-number">Experiment 2</span>
+                <h3>✏️ Text Formatting Tags</h3>
+                <p>Bold, italic, emphasis, code, and other inline text formatting in HTML.</p>
+                <div class="experiment-links">
+                    <a href="assignmnet2.html" class="btn btn-filename">assignmnet2.html</a>
+                </div>
+            </div>
 
-<div class="assignment">
-    <h2>Assignment 2</h2>
-    <iframe src="assignmnet2.html"></iframe>
-</div>
+            <div class="experiment-card">
+                <span class="experiment-number">Experiment 3</span>
+                <h3>📄 Static Web Page</h3>
+                <p>Build a complete static website with HTML structure and content.</p>
+                <div class="experiment-links">
+                    <a href="assignment3.html" class="btn btn-filename">assignment3.html</a>
+                </div>
+            </div>
 
-<div class="assignment">
-    <h2>Assignment 3</h2>
-    <iframe src="assignment3.html"></iframe>
-</div>
+            <div class="experiment-card">
+                <span class="experiment-number">Experiment 4</span>
+                <h3>📋 Nested Lists</h3>
+                <p>Learn about ordered and unordered lists with nesting.</p>
+                <div class="experiment-links">
+                    <a href="assignment8.html" class="btn btn-filename">assignment8.html</a>
+                </div>
+            </div>
 
-<div class="assignment">
-    <h2>Assignment 4</h2>
-    <iframe src="assignment4.html"></iframe>
-</div>
+            <div class="experiment-card">
+                <span class="experiment-number">Experiment 5</span>
+                <h3>🖼️ Image Tags</h3>
+                <p>Explore image embedding and attributes in HTML.</p>
+                <div class="experiment-links">
+                    <a href="assignment4.html" class="btn btn-filename">assignment4.html</a>
+                </div>
+            </div>
 
-<div class="assignment">
-    <h2>Assignment 5</h2>
-    <iframe src="assignment5.html"></iframe>
-</div>
+            <div class="experiment-card">
+                <span class="experiment-number">Experiment 6</span>
+                <h3>📺 HTML Frames</h3>
+                <p>Understanding frames and frame-based layouts.</p>
+                <div class="experiment-links">
+                    <a href="assignment5.html" class="btn btn-filename">assignment5.html</a>
+                </div>
+            </div>
 
-<div class="assignment">
-    <h2>Assignment 6</h2>
-    <iframe src="assignment6.html"></iframe>
-</div>
+            <div class="experiment-card">
+                <span class="experiment-number">Experiment 7</span>
+                <h3>🔗 Hyperlinks</h3>
+                <p>Master different types of links and navigation.</p>
+                <div class="experiment-links">
+                    <a href="assignment6.html" class="btn btn-filename">assignment6.html</a>
+                </div>
+            </div>
 
-<div class="assignment">
-    <h2>Assignment 7</h2>
-    <iframe src="assignment7.html"></iframe>
-</div>
+            <div class="experiment-card">
+                <span class="experiment-number">Experiment 8</span>
+                <h3>📊 HTML Tables</h3>
+                <p>Create and style various types of HTML tables.</p>
+                <div class="experiment-links">
+                    <a href="ex7.html" class="btn btn-filename">ex7.html</a>
+                </div>
+            </div>
 
-<div class="assignment">
-    <h2>Assignment 8</h2>
-    <iframe src="assignment8.html"></iframe>
-</div>
+            <div class="experiment-card">
+                <span class="experiment-number">Experiment 9</span>
+                <h3>📋 HTML Forms</h3>
+                <p>Build interactive forms with various input types.</p>
+                <div class="experiment-links">
+                    <a href="assignment9.html" class="btn btn-filename">assignment9.html</a>
+                </div>
+            </div>
 
-<div class="assignment">
-    <h2>Assignment 9</h2>
-    <iframe src="assignment9.html"></iframe>
-</div>
+            <div class="experiment-card">
+                <span class="experiment-number">Experiment 10</span>
+                <h3>👤 Resume Builder</h3>
+                <p>Create a professional resume using HTML and CSS.</p>
+                <div class="experiment-links">
+                    <a href="assigment10.html" class="btn btn-filename">assigment10.html</a>
+                </div>
+            </div>
 
-<div class="assignment">
-    <h2>Assignment 10</h2>
-    <iframe src="assigment10.html"></iframe>
-</div>
+            <div class="experiment-card">
+                <span class="experiment-number">Experiment 11</span>
+                <h3>📄 XML Basics</h3>
+                <p>Introduction to XML structure and syntax.</p>
+                <div class="experiment-links">
+                    <a href="Experimentno11/index.html" class="btn btn-filename">Experimentno11/index.html</a>
+                    <a href="Experimentno11/student.xml" class="btn btn-filename">Experimentno11/student.xml</a>
+                    <a href="Experimentno11/students.css" class="btn btn-filename">Experimentno11/students.css</a>
+                </div>
+            </div>
 
-<div class="assignment">
-    <h2>Assignment 11</h2>
-    <a href="experiment11.xml" target="_blank">View Output</a>
-</div>
+            <div class="experiment-card">
+                <span class="experiment-number">Experiment 12</span>
+                <h3>🔄 XML & XSL Transformation</h3>
+                <p>Transform XML data using XSL stylesheets.</p>
+                <div class="experiment-links">
+                    <a href="Experimentno12/index.html" class="btn btn-filename">Experimentno12/index.html</a>
+                    <a href="Experimentno12/students.xml" class="btn btn-filename">Experimentno12/students.xml</a>
+                    <a href="Experimentno12/students.xsl" class="btn btn-filename">Experimentno12/students.xsl</a>
+                    <a href="Experimentno12/students_output.htm" class="btn btn-filename">Experimentno12/students_output.htm</a>
+                </div>
+            </div>
 
-<div class="assignment">
-    <h2>Assignment 12</h2>
-    <a href="experiment12.xml" target="_blank">View Output</a>
-</div>
+            <div class="experiment-card">
+                <span class="experiment-number">Experiment 13</span>
+                <h3>🚀 Advanced XML & XSL</h3>
+                <p>Advanced XML processing and XSL techniques.</p>
+                <div class="experiment-links">
+                    <a href="Experimentno13/index.html" class="btn btn-filename">Experimentno13/index.html</a>
+                    <a href="Experimentno13/cat.xml" class="btn btn-filename">Experimentno13/cat.xml</a>
+                    <a href="Experimentno13/cat2.xsl" class="btn btn-filename">Experimentno13/cat2.xsl</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<div class="assignment">
-    <h2>Assignment 13</h2>
-    <a href="experiment13.xml" target="_blank">View  Output</a>
-</div>
-
+    <div class="footer">
+        <p>Web Development Lab Experiments • Built with HTML & CSS</p>
+        <p style="margin-top: 0.5rem; font-size: 0.95rem; color: #64748b;">Created by Aditya Mahekar• College Student</p>
+    </div>
 </body>
 </html>
