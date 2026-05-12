@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Houston Host City</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.city-page .stadium-layout{
+	display:flex;
+	gap:24px;
+	align-items:flex-start;
+}
+.city-page .stadium-gallery{
+	width:34%;
+	display:flex;
+	flex-direction:column;
+	gap:14px;
+}
+.city-page .stadium-gallery figure{
+	margin:0;
+	background:#fff;
+	border:2px solid #C9A227;
+	border-radius:10px;
+	overflow:hidden;
+}
+.city-page .stadium-gallery img{
+	width:100%;
+	height:160px;
+	object-fit:cover;
+	display:block;
+}
+.city-page .stadium-info{
+	flex:1;
+}
+@media (max-width:768px){
+	.city-page .stadium-layout{
+		flex-direction:column;
+	}
+	.city-page .stadium-gallery{
+		width:100%;
+	}
+}
+</style>
+</head>
+<body class="city-page">
+<header>
+<h1>Houston, Texas</h1>
+<p align="center">FIFA World Cup 2026 Host City</p>
+</header>
+<nav>
+<a href="index.html">Home</a>
+<a href="hosts.html">Host Countries</a>
+<a href="usa.html">U.S. Cities</a>
+<a href="teams.html">Teams</a>
+<a href="facts.html">Facts</a>
+</nav>
+<div class="container">
+<section>
+<article>
+<h2>NRG Stadium</h2>
+<div class="stadium-layout">
+<div class="stadium-gallery">
+<figure>
+<img src="../image/NRGStadium.jpg.jpeg" alt="NRG Stadium exterior">
+</figure>
+<figure>
+<img src="../image/NRGStadium1.jpg.jpeg" alt="NRG Stadium seating">
+</figure>
+<figure>
+<img src="../image/NRGStadium2.jpg.jpeg" alt="NRG Stadium field">
+</figure>
+</div>
+<div class="stadium-info">
+<p style="text-align:justify;">Houston will welcome World Cup fans at NRG Stadium, a large venue with experience hosting major national and international events.<br></br>
+The stadium's covered design and modern facilities make it well suited for tournament football.
+Houston's diverse fan base and strong sports culture add to its importance as a host city.</p>
+</div>
+</div>
+</article>
+</section>
+<aside>
+<h3>Quick Info</h3>
+<ul>
+<li>City: Houston</li>
+<li>State: Texas</li>
+<li>Stadium: NRG Stadium</li>
+<li>Host nation: United States</li>
+</ul>
+</aside>
+</div>
+<footer>
+<p align="center">© 2026 FIFA World Cup | Houston Host City</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Vancouver Host City</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.city-page .stadium-layout{
+	display:flex;
+	gap:24px;
+	align-items:flex-start;
+}
+.city-page .stadium-gallery{
+	width:34%;
+	display:flex;
+	flex-direction:column;
+	gap:14px;
+}
+.city-page .stadium-gallery img{
+	width:100%;
+	height:160px;
+	object-fit:cover;
+}
+.city-page .stadium-info{
+	flex:1;
+}
+@media (max-width:768px){
+	.city-page .stadium-layout{
+		flex-direction:column;
+	}
+	.city-page .stadium-gallery{
+		width:100%;
+	}
+}
+</style>
+</head>
+<body class="city-page">
+<header>
+<h1>Vancouver, British Columbia</h1>
+<p align="center">FIFA World Cup 2026 Host City</p>
+</header>
+<nav>
+<a href="index.html">Home</a>
+<a href="hosts.html">Host Countries</a>
+<a href="canada.html">Canada Cities</a>
+<a href="teams.html">Teams</a>
+<a href="facts.html">Facts</a>
+</nav>
+<div class="container">
+<section>
+<article>
+<h2>BC Place</h2>
+<div class="stadium-layout">
+<div class="stadium-gallery">
+<img src="../image/BC Place2.jpg" alt="BC Place exterior">
+<img src="../image/BC Place1.jpg" alt="BC Place seating">
+<img src="../image/BC Place.jpg" alt="BC Place field">
+</div>
+<div class="stadium-info">
+<p style="text-align:justify;">Vancouver will welcome World Cup matches at BC Place, a major stadium known for hosting top sporting events in western Canada.<br></br>
+The venue offers a modern experience for fans and gives Vancouver a leading role in the 2026 tournament.
+Its location, facilities, and football support make it a key Canadian destination during the World Cup.</p>
+</div>
+</div>
+</article>
+</section>
+<aside>
+<h3>Quick Info</h3>
+<ul>
+<li>City: Vancouver</li>
+<li>Province: British Columbia</li>
+<li>Stadium: BC Place</li>
+<li>Host nation: Canada</li>
+</ul>
+</aside>
+</div>
+<footer>
+<p align="center">Copyright 2026 FIFA World Cup | Vancouver Host City</p>
+</footer>
+</body>
+</html>

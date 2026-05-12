@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Los Angeles Host City</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.city-page .stadium-layout{
+	display:flex;
+	gap:24px;
+	align-items:flex-start;
+}
+.city-page .stadium-gallery{
+	width:34%;
+	display:flex;
+	flex-direction:column;
+	gap:14px;
+}
+.city-page .stadium-gallery figure{
+	margin:0;
+	background:#fff;
+	border:2px solid #C9A227;
+	border-radius:10px;
+	overflow:hidden;
+}
+.city-page .stadium-gallery img{
+	width:100%;
+	height:160px;
+	object-fit:cover;
+	display:block;
+}
+.city-page .stadium-info{
+	flex:1;
+}
+@media (max-width:768px){
+	.city-page .stadium-layout{
+		flex-direction:column;
+	}
+	.city-page .stadium-gallery{
+		width:100%;
+	}
+}
+</style>
+</head>
+<body class="city-page">
+<header>
+<h1>Los Angeles, California</h1>
+<p align="center">FIFA World Cup 2026 Host City</p>
+</header>
+<nav>
+<a href="index.html">Home</a>
+<a href="hosts.html">Host Countries</a>
+<a href="usa.html">U.S. Cities</a>
+<a href="teams.html">Teams</a>
+<a href="facts.html">Facts</a>
+</nav>
+<div class="container">
+<section>
+<article>
+<h2>SoFi Stadium</h2>
+<div class="stadium-layout">
+<div class="stadium-gallery">
+<figure>
+<img src="../image/SoFiStadium.jpg.jpeg" alt="SoFi Stadium exterior">
+</figure>
+<figure>
+<img src="../image/SoFiStadium1.jpg.jpeg" alt="SoFi Stadium seating">
+</figure>
+<figure>
+<img src="../image/SoFiStadium2.jpg.jpeg" alt="SoFi Stadium field">
+</figure>
+</div>
+<div class="stadium-info">
+<p style="text-align:justify;">Los Angeles will stage matches at SoFi Stadium in Inglewood, one of the newest and most impressive sports venues in the world.<br></br>
+The stadium is known for its striking design, advanced technology, and premium fan experience.
+With its international profile, Los Angeles is expected to be one of the headline host cities of the tournament.</p>
+</div>
+</div>
+</article>
+</section>
+<aside>
+<h3>Quick Info</h3>
+<ul>
+<li>City: Los Angeles</li>
+<li>State: California</li>
+<li>Stadium: SoFi Stadium</li>
+<li>Location: Inglewood</li>
+</ul>
+</aside>
+</div>
+<footer>
+<p align="center">© 2026 FIFA World Cup | Los Angeles Host City</p>
+</footer>
+</body>
+</html>

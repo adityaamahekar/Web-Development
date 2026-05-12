@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Boston Host City</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.city-page .stadium-layout{
+	display:flex;
+	gap:24px;
+	align-items:flex-start;
+}
+.city-page .stadium-gallery{
+	width:34%;
+	display:flex;
+	flex-direction:column;
+	gap:14px;
+}
+.city-page .stadium-gallery figure{
+	margin:0;
+	background:#fff;
+	border:2px solid #C9A227;
+	border-radius:10px;
+	overflow:hidden;
+}
+.city-page .stadium-gallery img{
+	width:100%;
+	height:160px;
+	object-fit:cover;
+	display:block;
+}
+.city-page .stadium-info{
+	flex:1;
+}
+@media (max-width:768px){
+	.city-page .stadium-layout{
+		flex-direction:column;
+	}
+	.city-page .stadium-gallery{
+		width:100%;
+	}
+}
+</style>
+</head>
+<body class="city-page">
+<header>
+<h1>Boston, Massachusetts</h1>
+<p align="center">FIFA World Cup 2026 Host City</p>
+</header>
+<nav>
+<a href="index.html">Home</a>
+<a href="hosts.html">Host Countries</a>
+<a href="usa.html">U.S. Cities</a>
+<a href="teams.html">Teams</a>
+<a href="facts.html">Facts</a>
+</nav>
+<div class="container">
+<section>
+<article>
+<h2>Gillette Stadium</h2>
+<div class="stadium-layout">
+<div class="stadium-gallery">
+<figure>
+<img src="../image/GilletteStadium.jpg.jpeg" alt="Gillette Stadium exterior">
+</figure>
+<figure>
+<img src="../image/GilletteStadium1.jpg.jpeg" alt="Gillette Stadium seating">
+</figure>
+<figure>
+<img src="../image/GilletteStadium2.jpg.jpeg" alt="Gillette Stadium field">
+</figure>
+</div>
+<div class="stadium-info">
+<p style="text-align:justify;">Boston's World Cup matches will be played at Gillette Stadium in Foxborough, a venue with a long history of hosting major sporting events.<br></br>
+The stadium offers a large crowd capacity, modern fan facilities, and easy access from the wider New England region.
+Its tournament role gives the Boston area a strong presence in the 2026 competition.</p>
+</div>
+</div>
+</article>
+</section>
+<aside>
+<h3>Quick Info</h3>
+<ul>
+<li>City: Boston</li>
+<li>State: Massachusetts</li>
+<li>Stadium: Gillette Stadium</li>
+<li>Location: Foxborough</li>
+</ul>
+</aside>
+</div>
+<footer>
+<p style="text-align:justify;">Â© 2026 FIFA World Cup | Boston Host City</p>
+</footer>
+</body>
+</html>

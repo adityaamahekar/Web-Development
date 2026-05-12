@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Seattle Host City</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.city-page .stadium-layout{
+	display:flex;
+	gap:24px;
+	align-items:flex-start;
+}
+.city-page .stadium-gallery{
+	width:34%;
+	display:flex;
+	flex-direction:column;
+	gap:14px;
+}
+.city-page .stadium-gallery figure{
+	margin:0;
+	background:#fff;
+	border:2px solid #C9A227;
+	border-radius:10px;
+	overflow:hidden;
+}
+.city-page .stadium-gallery img{
+	width:100%;
+	height:160px;
+	object-fit:cover;
+	display:block;
+}
+.city-page .stadium-info{
+	flex:1;
+}
+@media (max-width:768px){
+	.city-page .stadium-layout{
+		flex-direction:column;
+	}
+	.city-page .stadium-gallery{
+		width:100%;
+	}
+}
+</style>
+</head>
+<body class="city-page">
+<header>
+<h1>Seattle, Washington</h1>
+<p align="center">FIFA World Cup 2026 Host City</p>
+</header>
+<nav>
+<a href="index.html">Home</a>
+<a href="hosts.html">Host Countries</a>
+<a href="usa.html">U.S. Cities</a>
+<a href="teams.html">Teams</a>
+<a href="facts.html">Facts</a>
+</nav>
+<div class="container">
+<section>
+<article>
+<h2>Lumen Field</h2>
+<div class="stadium-layout">
+<div class="stadium-gallery">
+<figure>
+<img src="../image/LumenField.jpg" alt="Lumen Field exterior">
+</figure>
+<figure>
+<img src="../image/LumenField1.jpg" alt="Lumen Field seating">
+</figure>
+<figure>
+<img src="../image/LumenField2.jpg" alt="Lumen Field field">
+</figure>
+</div>
+<div class="stadium-info">
+<p style="text-align:justify;">Seattle will host World Cup matches at Lumen Field, a venue widely known for its intense crowd atmosphere and football-friendly design.<br></br>
+The stadium's strong support, central setting, and modern facilities make it one of the standout host venues in the U.S.
+Seattle's soccer culture will help create an exciting tournament experience for visiting fans.</p>
+</div>
+</div>
+</article>
+</section>
+<aside>
+<h3>Quick Info</h3>
+<ul>
+<li>City: Seattle</li>
+<li>State: Washington</li>
+<li>Stadium: Lumen Field</li>
+<li>Host nation: United States</li>
+</ul>
+</aside>
+</div>
+<footer>
+<p align="center">© 2026 FIFA World Cup | Seattle Host City</p>
+</footer>
+</body>
+</html>
