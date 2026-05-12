@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 11 - XML Basics</title>
+    <link rel="stylesheet" href="../nav-style.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9ff;
+            color: #2d3748;
+        }
+        .container {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 1000px;
+            margin: 2rem auto;
+        }
+        h2 {
+            color: #667eea;
+            margin-bottom: 1.5rem;
+        }
+        .xml-viewer {
+            background: #f5f5f5;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+        .xml-tag {
+            color: #667eea;
+            font-weight: 600;
+        }
+        .xml-attr {
+            color: #764ba2;
+        }
+        .xml-text {
+            color: #2d3748;
+        }
+        .info-box {
+            background: #f0f4ff;
+            border-left: 4px solid #667eea;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+        .info-box h3 {
+            margin-top: 0;
+            color: #667eea;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-header">
+        <h2 class="nav-title">📄 Experiment 11 - XML Basics</h2>
+        <div class="nav-buttons">
+            <a href="../index.html" class="back-btn">← Back to Home</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2>XML Data Structure - Student Records</h2>
+        
+        <div class="info-box">
+            <h3>📋 About This Experiment</h3>
+            <p>This experiment demonstrates basic XML structure with student records. XML is used to store and display structured data with custom tags.</p>
+        </div>
+
+        <div class="info-box" style="background: #e8f5e9; border-color: #4caf50;">
+            <h3 style="color: #2e7d32;">📁 View Output Files</h3>
+            <p style="color: #2e7d32;">This experiment uses XML with CSS styling. The data structure contains student information stored in a custom XML format.</p>
+            <div class="file-links" style="margin-top: 1rem;">
+                <a href="student.xml" class="file-link">📄 View XML Output</a>
+            </div>
+        </div>
+
+        <h3>🎯 Key Concepts</h3>
+        <ul style="line-height: 2;">
+            <li><strong>XML Declaration:</strong> Specifies the XML version and encoding</li>
+            <li><strong>XML Stylesheet:</strong> Links CSS styling to XML content</li>
+            <li><strong>Root Element:</strong> &lt;students&gt; contains all student records</li>
+            <li><strong>Custom Tags:</strong> Tags like &lt;student&gt;, &lt;name&gt;, &lt;email&gt; define data structure</li>
+            <li><strong>Hierarchical Structure:</strong> Parent-child relationships organize data logically</li>
+        </ul>
+
+        <h3>📁 Files Used</h3>
+        <ul>
+            <li><code>student.xml</code> - Main XML data file</li>
+            <li><code>students.css</code> - CSS styling for XML display</li>
+        </ul>
+
+        <div class="info-box">
+            <h3>✨ Learning Outcomes</h3>
+            <p>After completing this experiment, you should understand:</p>
+            <ul style="margin: 0.5rem 0; padding-left: 1.5rem;">
+                <li>Basic XML syntax and structure</li>
+                <li>How to create custom XML tags</li>
+                <li>XML declaration and prolog</li>
+                <li>Linking stylesheets to XML documents</li>
+                <li>Data representation in XML format</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="exp-footer">
+        <p>&copy; 2024 Web Development Lab | 
+            <a href="../index.html">Home</a>
+        </p>
+    </footer>
+</body>
+</html>

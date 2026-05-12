@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 13 - Advanced XML & XSL</title>
+    <link rel="stylesheet" href="../nav-style.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9ff;
+            color: #2d3748;
+        }
+        .container {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 1000px;
+            margin: 2rem auto;
+        }
+        h2 {
+            color: #667eea;
+            margin-bottom: 1.5rem;
+        }
+        .info-box {
+            background: #f0f4ff;
+            border-left: 4px solid #667eea;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+        .info-box h3 {
+            margin-top: 0;
+            color: #667eea;
+        }
+        .file-links {
+            display: flex;
+            gap: 1rem;
+            margin: 1.5rem 0;
+            flex-wrap: wrap;
+        }
+        .file-link {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .file-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        .feature-box {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+        .feature-box h4 {
+            color: #856404;
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-header">
+        <h2 class="nav-title">🚀 Experiment 13 - Advanced XML & XSL</h2>
+        <div class="nav-buttons">
+            <a href="../index.html" class="back-btn">← Back to Home</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2>Complex XML to HTML Transformation</h2>
+        
+        <div class="info-box">
+            <h3>📋 About This Experiment</h3>
+            <p>This is an advanced experiment demonstrating complex XML structures and sophisticated XSLT transformations. It showcases real-world scenarios of data transformation with filtering, sorting, and conditional logic.</p>
+        </div>
+
+        <div class="info-box" style="background: #e8f5e9; border-color: #4caf50;">
+            <h3 style="color: #2e7d32;">📁 Output Files</h3>
+            <p style="color: #2e7d32;">This advanced experiment demonstrates complex XML structure and sophisticated XSLT transformations. View the generated output to see the transformation results.</p>
+            <div class="file-links" style="margin-top: 1rem;">
+                <a href="cat.xml" class="file-link">🚀 View Transformed Output</a>
+            </div>
+        </div>
+
+        <h3>🎯 Advanced Features</h3>
+        <div class="feature-box">
+            <h4>✨ Complex XSLT Transformations</h4>
+            <ul style="margin: 0; padding-left: 1.5rem;">
+                <li>Nested template processing</li>
+                <li>Conditional logic (xsl:if, xsl:choose)</li>
+                <li>Sorting and filtering (xsl:sort)</li>
+                <li>Variable handling (xsl:variable)</li>
+            </ul>
+        </div>
+
+        <div class="feature-box">
+            <h4>🔍 XML Structure</h4>
+            <ul style="margin: 0; padding-left: 1.5rem;">
+                <li>Hierarchical data organization</li>
+                <li>Attributes and nested elements</li>
+                <li>Complex data relationships</li>
+                <li>Dynamic content generation</li>
+            </ul>
+        </div>
+
+        <h3>📊 Transformation Process</h3>
+        <div style="background: #f0f4ff; padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0;">
+            <p><strong>Input:</strong> cat.xml (Complex XML Data)</p>
+            <p style="text-align: center; font-size: 1.5rem; margin: 1rem 0;">⬇️ Advanced XSLT Processing ⬇️</p>
+            <p><strong>Stylesheet:</strong> cat2.xsl (Advanced XSL Rules)</p>
+            <p style="text-align: center; font-size: 1.5rem; margin: 1rem 0;">⬇️ Intelligent Transformation ⬇️</p>
+            <p><strong>Output:</strong> Formatted HTML with Dynamic Content</p>
+        </div>
+
+        <h3>📚 Concepts Covered</h3>
+        <ul style="line-height: 2;">
+            <li><strong>Template Modes:</strong> Using multiple templates for different processing paths</li>
+            <li><strong>XPath Expressions:</strong> Advanced path expressions for complex queries</li>
+            <li><strong>Conditional Processing:</strong> Making decisions during transformation</li>
+            <li><strong>Dynamic HTML Generation:</strong> Creating structured output from XML</li>
+            <li><strong>Error Handling:</strong> Dealing with missing or unexpected data</li>
+            <li><strong>Performance Optimization:</strong> Efficient transformation techniques</li>
+        </ul>
+
+        <h3>📁 Files Used</h3>
+        <ul>
+            <li><code>cat.xml</code> - Complex source XML data</li>
+            <li><code>cat2.xsl</code> - Advanced XSL stylesheet with sophisticated rules</li>
+        </ul>
+
+        <div class="info-box">
+            <h3>✨ Learning Outcomes</h3>
+            <p>After completing this advanced experiment, you should understand:</p>
+            <ul style="margin: 0.5rem 0; padding-left: 1.5rem;">
+                <li>Advanced XSLT techniques and patterns</li>
+                <li>Complex XPath expressions</li>
+                <li>Conditional and looping constructs in XSL</li>
+                <li>Template inheritance and overriding</li>
+                <li>Real-world XML transformation scenarios</li>
+                <li>Performance and scalability considerations</li>
+            </ul>
+        </div>
+
+        <div class="feature-box" style="background: #d4edda; border-color: #28a745;">
+            <h4 style="color: #155724;">🏆 Next Steps</h4>
+            <p style="margin: 0; color: #155724;">
+                You've completed all 13 experiments! These fundamentals prepare you for:
+                <ul style="margin: 0.5rem 0; padding-left: 1.5rem; color: #155724;">
+                    <li>Web application development</li>
+                    <li>Data processing and integration</li>
+                    <li>API development with XML/JSON</li>
+                    <li>Advanced web technologies</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+
+    <footer class="exp-footer">
+        <p>&copy; 2024 Web Development Lab | 
+            <a href="../index.html">Home</a>
+        </p>
+    </footer>
+</body>
+</html>

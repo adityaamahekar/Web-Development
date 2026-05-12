@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 12 - XML & XSL Transformation</title>
+    <link rel="stylesheet" href="../nav-style.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9ff;
+            color: #2d3748;
+        }
+        .container {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 1000px;
+            margin: 2rem auto;
+        }
+        h2 {
+            color: #667eea;
+            margin-bottom: 1.5rem;
+        }
+        .xml-viewer {
+            background: #f5f5f5;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+        .xml-tag {
+            color: #667eea;
+            font-weight: 600;
+        }
+        .info-box {
+            background: #f0f4ff;
+            border-left: 4px solid #667eea;
+            padding: 1rem;
+            margin: 1.5rem 0;
+            border-radius: 4px;
+        }
+        .info-box h3 {
+            margin-top: 0;
+            color: #667eea;
+        }
+        .file-links {
+            display: flex;
+            gap: 1rem;
+            margin: 1.5rem 0;
+            flex-wrap: wrap;
+        }
+        .file-link {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .file-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-header">
+        <h2 class="nav-title">🔄 Experiment 12 - XML & XSL Transformation</h2>
+        <div class="nav-buttons">
+            <a href="../index.html" class="back-btn">← Back to Home</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2>XML to HTML Transformation using XSL</h2>
+        
+        <div class="info-box">
+            <h3>📋 About This Experiment</h3>
+            <p>This experiment demonstrates how XML data can be transformed into different formats using XSLT (XSL Transformations). The XML document is processed with an XSL stylesheet to generate formatted HTML output.</p>
+        </div>
+
+        <h3>🔗 View Output</h3>
+        <div class="file-links">
+            <a href="students_output.htm" class="file-link" style="width: 100%; text-align: center;">✨ View Transformed Output (HTML)</a>
+        </div>
+
+        <h3>📊 Transformation Process</h3>
+        <div style="background: #f0f4ff; padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0;">
+            <p><strong>Input:</strong> students.xml (XML Data)</p>
+            <p style="text-align: center; font-size: 1.5rem; margin: 1rem 0;">⬇️ XSLT Processing ⬇️</p>
+            <p><strong>Stylesheet:</strong> students.xsl (XSLT Rules)</p>
+            <p style="text-align: center; font-size: 1.5rem; margin: 1rem 0;">⬇️ Transformation ⬇️</p>
+            <p><strong>Output:</strong> students_output.htm (Formatted HTML)</p>
+        </div>
+
+        <h3>🎯 Key Concepts</h3>
+        <ul style="line-height: 2;">
+            <li><strong>XSLT (XSL Transformations):</strong> Language for transforming XML documents</li>
+            <li><strong>Template Matching:</strong> XSL templates match XML elements</li>
+            <li><strong>Value-of Select:</strong> Extracts data from XML elements</li>
+            <li><strong>For-each Loop:</strong> Iterates through XML nodes</li>
+            <li><strong>Output Formats:</strong> Can generate HTML, XML, or plain text</li>
+        </ul>
+
+        <h3>📁 Files Used</h3>
+        <ul>
+            <li><code>students.xml</code> - Source XML data with student information</li>
+            <li><code>students.xsl</code> - XSL stylesheet defining transformation rules</li>
+            <li><code>students_output.htm</code> - Generated HTML output (viewable)</li>
+        </ul>
+
+        <div class="info-box">
+            <h3>✨ Learning Outcomes</h3>
+            <p>After completing this experiment, you should understand:</p>
+            <ul style="margin: 0.5rem 0; padding-left: 1.5rem;">
+                <li>XSLT syntax and structure</li>
+                <li>How to define templates in XSL</li>
+                <li>XML to HTML transformation process</li>
+                <li>Using XPath expressions</li>
+                <li>Applying styles and formatting during transformation</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="exp-footer">
+        <p>&copy; 2024 Web Development Lab | 
+            <a href="../index.html">Home</a>
+        </p>
+    </footer>
+</body>
+</html>
